@@ -1,0 +1,8 @@
+{
+  "name": "aura-security",
+  "version": "1.0.0",
+  "description": "Native security helpers for Aura: file protection, backup exclusion, PBKDF2",
+  "main": "index.ts",
+  "license": "UNLICENSED",
+  "private": true
+}

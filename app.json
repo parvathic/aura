@@ -1,18 +1,14 @@
 {
   "expo": {
-    "name": "aura",
+    "name": "Aura",
     "slug": "aura",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.parvathi.aura"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +21,35 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "enableRemoteNotifications": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#fff8f7",
+          "imageWidth": 200
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "./plugins/withPodDeploymentTarget",
+      "expo-status-bar",
+      "expo-sharing",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Aura uses Face ID to keep your cycle data private."
+        }
+      ]
+    ]
   }
 }
